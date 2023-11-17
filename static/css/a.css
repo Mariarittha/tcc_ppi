@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 200vh;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 30px 4%;
+   
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color:#E28743;
+    text-decoration: none;
+}
+
+.btn-contato button{
+    border: 0;
+    background-color: #E28743;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* footer {
+    padding: auto;
+    margin-top: 90px;
+    background-color: #E28743;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    height: 350px;
+    width: 100%;
+    position: fixed;
+} */
+
+ footer {
+    padding: auto;
+    margin-top: 90px;
+    background-color:#E28743;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    position: fixed;
+    height: 350px;
+    bottom: 0;
+    width: 100%;
+
+} 
+
+
+.f { 
+    background-color:#E28743; 
+    width:100%; float:left; 
+    text-align:center;
+    padding:1.5em 0em; 
+    text-align: center;
+}
+
+.f { font-family:'open_sanslight'; font-size:1em; color:#e1e0e0; height:20px; }
+.f .m-b-footer   { margin-bottom:0.5em; }
+.f .by   { font-size:0.96em; }
+.f .by a       { color:#fff; text-decoration:none; }
+.f .by a:hover { text-decoration:underline; }
+.f .by i { font-size:0.96em; margin-right:3px; color:#e82626; }
+
+.foot{
+    margin-top: 20px;
+    color: #fff;
+}
+
+
+footer ul{
+    list-style-type: none;
+}
+
+footer ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+footer ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+
+/* Estilos CSS para o footer */
+/* footer {
+    background-color: #E28743;
+    height: 200px; 
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000; 
+
+.rodape {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', 'sans-serif';
+    color: white;
+} */
+
+/* Estilos adicionais conforme necessário */
+
+/* footer {
+    background-color: #E28743;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rodape {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', 'sans-sarif';
+    color: white;
+    position: fixed;
+    bottom: 0;
+} */
