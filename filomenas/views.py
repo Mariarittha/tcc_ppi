@@ -12,6 +12,9 @@ class Home(generic.TemplateView):
 class pacote(generic.TemplateView):
     template_name = "nao_logado/pacote.html"
 
+class filomenas(generic.TemplateView):
+    template_name = "nao_logado/filomenas.html"
+
 # logado
 
 class Home2(generic.TemplateView):
@@ -19,6 +22,9 @@ class Home2(generic.TemplateView):
 
 class pacote2(generic.TemplateView):
     template_name = "logado/pacote.html"
+
+class filomenas2(generic.TemplateView):
+    template_name = "logado/filomenas.html"
 
 #filomenas
 
