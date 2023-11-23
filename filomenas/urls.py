@@ -18,5 +18,7 @@ urlpatterns = [
     # filomenas
     path('filomenas/', views.filomenas.as_view(), name='filomenas'),
 
+    # hopede
+    path('perfil/', views.hospede.as_view(), name='perfil'),
 
 ]

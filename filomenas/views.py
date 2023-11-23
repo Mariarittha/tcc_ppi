@@ -33,3 +33,9 @@ class filomenas(generic.TemplateView):
 
 class Index(generic.TemplateView):
     template_name = "filomenas/index.html"
+
+
+# hospede
+
+class hospede(generic.TemplateView):
+    template_name = "hospede/perfil.html"
