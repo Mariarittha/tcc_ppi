@@ -21,4 +21,9 @@ urlpatterns = [
     # hopede
     path('perfil/', views.hospede.as_view(), name='perfil'),
 
+    # outros
+    path('form/', views.CriarEstadia.as_view(), name='criar'),
+    path('listar/', views.ListarEstadia.as_view(), name='listar'),
+    path('comprar/', views.comprar.as_view(), name='comprar'),
+
 ]

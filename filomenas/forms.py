@@ -137,7 +137,7 @@ class EstadiaForm(forms.ModelForm):
         })
     )
     programacao = forms.CharField(
-        widget=forms.TextInput(attrs={
+        widget=forms.Textarea(attrs={
             "class": "form-control",
             "placeholder": "Programação",
         })

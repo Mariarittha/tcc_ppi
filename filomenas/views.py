@@ -42,28 +42,34 @@ class Index(generic.TemplateView):
 
 class hospede(generic.TemplateView):
     template_name = "hospede/perfil.html"
+
+class comprar( generic.TemplateView, LoginRequiredMixin):
+    template_name = "hospede/perfilc.html"
     
     
 # CRUD de Estadia
-class EstadiaListView(LoginRequiredMixin, generic.ListView):
+class ListarEstadia(LoginRequiredMixin, generic.ListView):
     model = estadia
+    template_name = 'logado/pacote.html'
+    context_object_name = 'estadias'
     paginate_by = 5
 
-class ReservaDetailView(LoginRequiredMixin, generic.DetailView):
+class DetalharEstadia(generic.DetailView):
     model = estadia
 
-class ReservaCreateView(LoginRequiredMixin, views.SuccessMessageMixin, generic.CreateView):
-    model =  estadia
-    form_class = EstadiaForm
-    success_url = reverse_lazy("reservas:reservas-list")
-    success_message = "Reserva cadastrada com sucesso!"
-
-class ReservaUpdateView(LoginRequiredMixin, views.SuccessMessageMixin, generic.UpdateView):
+class CriarEstadia(LoginRequiredMixin, views.SuccessMessageMixin, generic.CreateView):
     model = estadia
     form_class = EstadiaForm
-    success_url = reverse_lazy("reservas:reservas-list")
-    success_message = "Reserva atualizada com sucesso!"
+    template_name = 'filomenas/form_estadia.html'
+    success_url = reverse_lazy("filomenas:index")
+    success_message = "Estadia cadastrada com sucesso!"
 
-class ReservaDeleteView(LoginRequiredMixin, generic.DeleteView):
+class AtualizarEstadia(LoginRequiredMixin, views.SuccessMessageMixin, generic.UpdateView):
     model = estadia
-    success_url = reverse_lazy("reservas:reservas-list")
+    form_class = EstadiaForm
+    success_url = reverse_lazy("reservas:index")
+    success_message = "Estadia atualizada com sucesso!"
+
+class ApagarEstadia(LoginRequiredMixin, generic.DeleteView):
+    model = estadia
+    success_url = reverse_lazy("reservas:index")
