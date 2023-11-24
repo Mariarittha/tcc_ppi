@@ -12,13 +12,18 @@ class hospede(models.Model):
     profissao = models.CharField(max_length=120)
     email = models.CharField(max_length=150)
     idade = models.IntegerField()
+    imagem_perfil = models.ImageField(null=True)
+
 
 class filomenas(models.Model):
     nome = models.CharField(max_length=120)
     idade = models.IntegerField()
     descricao = models.CharField(max_length=1000)
+    imagem_filo = models.ImageField(null=True)
+
 
 class estadia(models.Model):
+    imagem = models.ImageField(null=True)
     duracao = models.IntegerField()
     nome_estadia = models.CharField(max_length=200)
     descricao_estadia = models.CharField(max_length=1000)
