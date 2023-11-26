@@ -13,6 +13,7 @@ class hospede(models.Model):
     email = models.EmailField(null=True)
     idade = models.IntegerField()
     imagem_perfil = models.ImageField(null=True)
+    telefone = models.CharField(max_length=20, null=True)
 
 
 class filomenas(models.Model):
@@ -21,6 +22,7 @@ class filomenas(models.Model):
     descricao = models.CharField(max_length=1000)
     imagem_filo = models.ImageField(null=True)
     email = models.EmailField(null=True)
+    telefone = models.CharField(max_length=20, null=True)
 
 
 class estadia(models.Model):

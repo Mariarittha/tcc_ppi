@@ -17,9 +17,12 @@ urlpatterns = [
 
     # filomenas
     path('filomenas/', views.filomenas.as_view(), name='filomenas'),
+    path('form_filomenas/', views.Criarfilomena.as_view(), name='form_filomenas'),
 
     # hopede
     path('perfil/', views.hospede.as_view(), name='perfil'),
+    path('form_hospede/', views.Criarhospede.as_view(), name='form_hospede'),
+
 
     # outros
     path('form/', views.CriarEstadia.as_view(), name='criar'),

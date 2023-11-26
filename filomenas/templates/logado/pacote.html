@@ -3,7 +3,6 @@
 
 {% block body %}
     
-  <h3 class="m-4 text-center">Listagem de Estadias</h3>
   <!-- {% if messages %}
     {% for message in messages %}
       <div{% if message.tags %} class="{{ message.tags }} p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3 m-4 text-center"{% endif %}>
@@ -34,7 +33,7 @@
         </div>
       {% empty %}
         <div class="col-md-12">
-          <p>Não existem estadias cadastradas.</p>
+          <p class="text-h1">Não existem estadias cadastradas.</p>
         </div>
       {% endfor %}
     </div>
