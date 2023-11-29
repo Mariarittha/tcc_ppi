@@ -14,6 +14,8 @@ urlpatterns = [
     path('home2/', views.Home2.as_view(), name='home2'),
     path('pacote2/', views.pacote2.as_view(), name='pacote2'),
     path('filomenas2/', views.filomenas2.as_view(), name='filomenas2'),
+    path('listar2/', views.ListarEstadia2.as_view(), name='listar2'),
+
 
     # filomenas
     path('filomenas/', views.filomenas.as_view(), name='filomenas'),

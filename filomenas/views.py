@@ -54,6 +54,12 @@ class ListarEstadia(LoginRequiredMixin, generic.ListView):
     template_name = 'logado/pacote.html'
     context_object_name = 'estadias'
     paginate_by = 5
+    
+class ListarEstadia2(LoginRequiredMixin, generic.ListView):
+    model = estadia
+    template_name = 'nao_logado/pacote.html'
+    context_object_name = 'estadias'
+    paginate_by = 5
 
 class DetalharEstadia(generic.DetailView):
     model = estadia

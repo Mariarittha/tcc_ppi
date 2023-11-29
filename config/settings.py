@@ -32,6 +32,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount',  # new
     'allauth.socialaccount.providers.google',
     'filomenas',
+    'crispy_forms',
+
 ]
 
 MIDDLEWARE = [
