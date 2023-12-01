@@ -32,7 +32,6 @@ INSTALLED_APPS = [
     'allauth.socialaccount',  # new
     'allauth.socialaccount.providers.google',
     'filomenas',
-    'crispy_forms',
 
 ]
 
@@ -86,6 +85,7 @@ AUTHENTICATION_BACKENDS = (
 )
 
 LOGIN_REDIRECT_URL = "filomenas:home2"
+LOGOUT_REDIRECT_URL = "filomenas:home"
 
 
 # Password validation

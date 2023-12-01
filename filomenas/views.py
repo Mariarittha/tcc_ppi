@@ -55,14 +55,20 @@ class ListarEstadia(LoginRequiredMixin, generic.ListView):
     context_object_name = 'estadias'
     paginate_by = 5
     
-class ListarEstadia2(LoginRequiredMixin, generic.ListView):
+class ListarEstadia2( generic.ListView):
     model = estadia
     template_name = 'nao_logado/pacote.html'
     context_object_name = 'estadias'
     paginate_by = 5
 
+class DetalharEstadia2(generic.DetailView):
+    model = estadia
+    template_name = 'nao_logado/detalhar_estadia.html'
+
 class DetalharEstadia(generic.DetailView):
     model = estadia
+    template_name = 'logado/detalhar_estadia2.html'
+
 
 class CriarEstadia(LoginRequiredMixin, views.SuccessMessageMixin, generic.CreateView):
     model = estadia
@@ -108,6 +114,8 @@ class Apagarhospede(LoginRequiredMixin, generic.DeleteView):
 
 class Detalharfilomena(generic.DetailView):
     model = hospede
+    template_name = 'filomenas/detalhar.html'
+
 
 class Criarfilomena(LoginRequiredMixin, views.SuccessMessageMixin, generic.CreateView):
     model = filomenas

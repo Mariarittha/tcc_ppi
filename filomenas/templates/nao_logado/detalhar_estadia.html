@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Detalhe_estadia
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class="m-4">
+    <div class="container">
+        <h2 class="shadow p-3 mb-5 bg-body-tertiary rounded">Estadia: {{ estadia.nome_estadia }}</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{ estadia.imagem.url }}" alt="Imagem" width="600px" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <p class="text-danger"><strong>Valor:</strong> R$ {{ estadia.valor }}</p>
+                <p class="duracao"><strong>Duração:</strong> {{ estadia.duracao }} dias</p>
+                <p class="descricao_estadia"><strong>Descrição:</strong> {{ estadia.descricao_estadia }}</p>
+                <p class="localizacao"><strong>Localização:</strong> {{ estadia.localizacao }}</p>
+                <p class="programacao"><strong>Programação:</strong> {{ estadia.programacao }}</p>
+                <hr>
+                <a href="{% url 'account_login' %}" class="btn btn-success">Comprar</a>
+                <a href="#" class="btn btn-success">Voltar</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
