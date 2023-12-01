@@ -33,10 +33,6 @@ INSTALLED_APPS = [
     'allauth.socialaccount',  # new
     'allauth.socialaccount.providers.google',
     'filomenas',
-<<<<<<< HEAD
-    
-=======
->>>>>>> 217ac401df77a0e777dd56481265aa8b5e3443bb
 
 ]
 
