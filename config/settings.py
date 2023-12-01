@@ -27,12 +27,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'users',
     'allauth', # new
     'allauth.account', # new
     'allauth.socialaccount',  # new
     'allauth.socialaccount.providers.google',
     'filomenas',
-    'users',
 
 ]
 
