@@ -32,7 +32,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',  # new
     'allauth.socialaccount.providers.google',
     'filomenas',
-    'crispy_forms',
+    'users',
 
 ]
 
@@ -85,6 +85,7 @@ AUTHENTICATION_BACKENDS = (
     "allauth.account.auth_backends.AuthenticationBackend",
 )
 
+AUTH_USER_MODEL = "users.User"
 LOGIN_REDIRECT_URL = "filomenas:home2"
 
 
