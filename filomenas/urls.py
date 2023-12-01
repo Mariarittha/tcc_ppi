@@ -9,17 +9,22 @@ urlpatterns = [
     path('home/', views.Home.as_view(), name='home'),
     path('pacote/', views.pacote.as_view(), name='pacote'),
     path('filomenas/', views.filomenas.as_view(), name='filomenas'),
+    path('detalhar/<int:pk>/', views.DetalharEstadia.as_view(), name='detalhar'),
+
 
     # nao logado
     path('home2/', views.Home2.as_view(), name='home2'),
     path('pacote2/', views.pacote2.as_view(), name='pacote2'),
     path('filomenas2/', views.filomenas2.as_view(), name='filomenas2'),
     path('listar2/', views.ListarEstadia2.as_view(), name='listar2'),
+    path('detalhar2/<int:pk>/', views.DetalharEstadia2.as_view(), name='detalhar2'),
+
 
 
     # filomenas
     path('filomenas/', views.filomenas.as_view(), name='filomenas'),
     path('form_filomenas/', views.Criarfilomena.as_view(), name='form_filomenas'),
+    path('detalharfilo/<int:pk>/', views.Detalharfilomena.as_view(), name='detalharfilo'),
 
     # hopede
     path('perfil/', views.hospede.as_view(), name='perfil'),

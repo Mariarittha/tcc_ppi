@@ -33,7 +33,10 @@ INSTALLED_APPS = [
     'allauth.socialaccount',  # new
     'allauth.socialaccount.providers.google',
     'filomenas',
+<<<<<<< HEAD
     
+=======
+>>>>>>> 217ac401df77a0e777dd56481265aa8b5e3443bb
 
 ]
 
@@ -88,6 +91,7 @@ AUTHENTICATION_BACKENDS = (
 
 AUTH_USER_MODEL = "users.User"
 LOGIN_REDIRECT_URL = "filomenas:home2"
+LOGOUT_REDIRECT_URL = "filomenas:home"
 
 
 # Password validation

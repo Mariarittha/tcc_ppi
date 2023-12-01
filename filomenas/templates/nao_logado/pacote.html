@@ -24,7 +24,7 @@
                 <p class="card-text">Localização: {{ estadia.localizacao }}</p>
                 <p class="card-text">Valor: {{ estadia.valor }}</p>
                 <p class="card-text">Programação: {{ estadia.programacao }}</p>
-                <a href="#" class="btn btn-secondary">Ver Mais</a>
+                <a href="{% url 'filomenas:detalhar' pk=estadia.pk %}" class="btn btn-secondary">Ver Mais</a>
                 <a href="#" class="btn btn-secondary">comprar</a>
 
               </div>
